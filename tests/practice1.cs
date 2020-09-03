@@ -14,10 +14,15 @@ public class Program
 		public int Def { get; set; }
 		public int Atk { get; set; }
 		
+		public Character(string name)
+		{
+			this.Name = name;
+		}
+		
 	}
 	public static void Main()
 	{
-		Character adv = new Character();
+		Character adv = new Character("Aelien");
 		adv.Name = "Eveehi";
 		Console.WriteLine(adv.Name);
 	}
