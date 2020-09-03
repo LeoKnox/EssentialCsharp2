@@ -19,11 +19,16 @@ public class Program
 			this.Name = name;
 		}
 		
+		public void Attack()
+		{
+			Console.WriteLine(this.Name + " attacks");
+		}
 	}
 	public static void Main()
 	{
 		Character adv = new Character("Aelien");
 		adv.Name = "Eveehi";
 		Console.WriteLine(adv.Name);
+		adv.Attack();
 	}
 }
