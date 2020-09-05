@@ -13,6 +13,16 @@ namespace EssentialTraining
             AdventurerList = new string[4] { "Eveehi", "Conan", "Elric", "Aelien" };
         }
 
+        public void MultiArray()
+        {
+            var MultiPass = new int[3, 4]
+            {
+                {0,1,2,3 },
+                {4,5,6,7 },
+                {8,9,10,11 }
+            };
+        }
+
         public override string ToString()
         {
             return $"There are {AdventurerList.Length} and they are {AdventurerList.ToString()}";
