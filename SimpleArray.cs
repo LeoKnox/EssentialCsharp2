@@ -4,7 +4,7 @@ using System.Text;
 
 namespace EssentialTraining
 {
-    class SimpleArray
+    public class SimpleArray
     {
         public string[] AdventurerList;
 
