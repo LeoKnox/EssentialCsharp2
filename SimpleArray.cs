@@ -21,10 +21,6 @@ namespace EssentialTraining
                 {4,5,6,7 },
                 {8,9,10,11 }
             };
-            var CharClasses = new List<string>();
-            CharClasses.Add("Fighter");
-            CharClasses.Add("Wizard");
-            CharClasses.Sort();
         }
 
         public override string ToString()
