@@ -6,6 +6,14 @@ namespace EssentialTraining
 {
     public class FlowControl
     {
+        public string ArmorOrCloth(string charClass)
+        {
+            if(charClass.ToLower() == "fighter" || charClass.ToLower() == "rogue")
+            {
+                return "Armor";
+            }
+            return "Cloth";
+        }
         public string MagicOrMundane(string charClass)
         {
             var result = "";
