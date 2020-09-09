@@ -6,6 +6,18 @@ namespace EssentialTraining
 {
     public class FlowControl
     {
+        public string IsStrong(int Strength)
+        {
+            if (Strength > 15)
+            {
+                return "Strong";
+            }
+            else if (Strength > 9 && Strength < 15)
+            {
+                return "Average";
+            }
+            return "Weak";
+        }
         public string ArmorOrCloth(string charClass)
         {
             if(charClass.ToLower() == "fighter" || charClass.ToLower() == "rogue")
