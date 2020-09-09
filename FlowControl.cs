@@ -6,6 +6,14 @@ namespace EssentialTraining
 {
     public class FlowControl
     {
+        public string IsClassNotFighter(string charClass)
+        {
+            if(charClass.ToLower() != "fighter")
+            {
+                return "You are not a battle turtle";
+            }
+            return "Welcome battle turtle";
+        }
         public string IsStrong(int Strength)
         {
             if (Strength > 15)
