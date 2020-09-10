@@ -4,6 +4,8 @@ using System.Text;
 
 namespace EssentialTraining
 {
+    public class ProgrammingLoops
+    {
     public int WhileLoop()
     {
         var sum = 0;
@@ -48,8 +50,6 @@ namespace EssentialTraining
         }
         return sum;
     }
-    public class ProgrammingLoops
-    {
         public void ForLoop()
         {
             int sum = 0;
