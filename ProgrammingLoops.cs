@@ -26,6 +26,18 @@ namespace EssentialTraining
         } while (counter < 100)
         return sum;
     }
+    public string BreakAndContinue()
+    {
+        var sb = new StringBuilder();
+        var words = new List<string>() { "Bread", "Cheese", "Eggs", "Bacon" };
+        foreach (var word in words)
+        {
+            if (word.StartsWith("M")) continue;
+            if (word.StartsWith("E")) break;
+            sb.AppendLine(word);
+        }
+        return sb.ToString();
+    }
     public int ForEachLoop()
     {
         var numbers = new List<int> { 1, 3, 5, 7, 9 };
