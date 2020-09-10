@@ -23,7 +23,7 @@ namespace EssentialTraining
         {
             sum += counter;
             counter++;
-        } while (counter < 100)
+        } while (counter < 100);
         return sum;
     }
     public string BreakAndContinue()
