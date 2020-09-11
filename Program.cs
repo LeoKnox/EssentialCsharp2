@@ -18,9 +18,9 @@ namespace EssentialTrainingApp
         private static int CrazyMath()
         {
             var income = 1000;
-            for( var i = 10; i >= 0; i--)
+            for( var i = 10; i > 0; i--)
             {
-                income = income = (income / i);
+                income = income = (income / i); // divides by zero
             }
             return income;
         }
