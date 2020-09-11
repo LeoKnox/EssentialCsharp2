@@ -12,6 +12,17 @@ namespace EssentialTrainingApp
             Words.Add("Steak");
             Words.Add("Potato");
             Words.Add("Wine");
+
+            CrazyMath();
+        }
+        private static int CrazyMath()
+        {
+            var income = 1000;
+            for( var i = 10; i >= 0; i--)
+            {
+                income = income = (income / i);
+            }
+            return income;
         }
     }
 }
