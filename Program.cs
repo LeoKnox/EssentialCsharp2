@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 
 namespace EssentialTrainingApp
 {
@@ -14,6 +15,21 @@ namespace EssentialTrainingApp
             Words.Add("Wine");
 
             CrazyMath();
+        }
+        private static void ReadTextFile()
+        {
+            try
+            {
+                using (var sr = new StreamReader(@"c:\temp\Read.txt"))
+                {
+                    string contents = sr.ReadToEnd();
+                    Console.WriteLine(contents);
+                }
+            }
+            catch
+            {
+                Console.WriteLine("File doesn't work");
+            }
         }
         private static int CrazyMath()
         {
