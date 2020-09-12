@@ -38,6 +38,10 @@ namespace EssentialTrainingApp
             {
                 Console.WriteLine("Unknown error" + ex.Message);
             }
+            finally
+            {
+                Console.WriteLine("Try/Catch used.");
+            }
         }
         private static int CrazyMath()
         {
