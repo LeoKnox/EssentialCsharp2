@@ -26,9 +26,17 @@ namespace EssentialTrainingApp
                     Console.WriteLine(contents);
                 }
             }
-            catch
+            catch(System.IO.DirectoryNotFoundException ex)
             {
-                Console.WriteLine("File doesn't work");
+                Console.WriteLine("Directory not found.");
+            }
+            catch(System.IO.FileNotFoundException ex)
+            {
+                Console.WriteLine("File not found.");
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine("Unknown error" + ex.Message);
             }
         }
         private static int CrazyMath()
