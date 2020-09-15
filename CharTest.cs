@@ -51,7 +51,7 @@ public class Program
 	public static void Main()
 	{
 		player One = new player("Aelien", 15, 22, 16, 8);
-		
+		Console.WriteLine(One.OneHit(12));
 		Character adv = new Character("Aelien");
 		adv.Name = "Eveehi";
 		Console.WriteLine(adv.Name);
